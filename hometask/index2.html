@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <div class="main">
+        <div class="main-header">
+            <p class="main-header-par">Create your account</p>
+        </div>
+        <form name="f1">
+            <label for="userName">
+                <span>First Name:</span> <br>
+                <input type="text" name="userName" id="userName" placeholder="Type here..." required value="">
+            </label>
+            <label for="userSecName">
+                <span>Second Name:</span> <br>
+                <input type="text" name="userSecName" id="userSecName" placeholder="Type here..." required value="" >
+            </label>
+            <label for="email">
+                <span>Email:</span> <br>
+                <input type="email" name="email" id="email" placeholder="Enter email" required value="">
+            </label><br>
+            <div class="sex">
+                <label for="sex1"><input type="radio" name="sex" id="sex1" value="man" checked>Man</label>
+                <label for="sex2"><input type="radio" name="sex" id="sex2" value="woman">Women</label>
+            </div> <br>
+            <label for=""><span>Position:</span>
+                <select name="cources" id="" aria-placeholder="choose" required>
+                    <option value="Choose" selected>Choose...</option>
+                    <option value="frontend">Frontend</option>
+                    <option value="backend">Backend</option>
+                    <option value="qa/qs">QA/QC</option>
+                </select>
+            </label>
+            <br>
+            <label for="arg"><input type="checkbox" name="arg" id="arg"><span id="argm">I agree all statemens in Terms of Services</span></label>
+            <label for="sign"><input type="submit" name ="sign" value="Sign Up" id="sign" disabled></label>
+        </form>
+    </div>
+    <div class="profile">
+        <div class="profile-header"></div>
+        <div class="profile-image"></div>
+        <div class="profile-info">
+            <p class="name">Ivan Ivanov</p>
+            <p class="mail">askdgjo@dlgk.com</p>
+            <p class="obl">Frontend</p>
+        </div>
+        <form name="f2"><input type="submit" value="Sign Out" style="background-color: green;"></form>
+        <div class="social-media">
+            <ul>
+                <li class="github"><a href="#"><img src="./images/github-142-svgrepo-com.svg" alt="" srcset=""></a></li>
+                <li class="linkedin"><a href="#"><img src="./images/linkedin-round-svgrepo-com.svg" alt="" srcset=""></a></li>
+                <li class="facebook"><a href="#"><img src="./images/facebook-svgrepo-com.svg" alt="" srcset=""></a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="./script2.js"></script>
+</body>
+</html>
